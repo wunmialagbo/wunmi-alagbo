@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wunmi Alagbo — Traditional Herbs, Bark &amp; Remedies | Ibeju-Lekki, Lagos</title>
+<meta name="description" content="Wunmi Alagbo — 30+ years preparing traditional Yoruba leaves, bark, and herbal blends in Bogije, Ibeju-Lekki, Lagos. Consult on WhatsApp, browse stock, or visit the shop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --indigo-deep:#1B2A4E;
+    --indigo-mid:#2F4373;
+    --indigo-pale:#3E5A94;
+    --rust:#8C3B2E;
+    --rust-dark:#6E2E23;
+    --gold:#C08A28;
+    --ivory:#F1E6D2;
+    --ivory-2:#E9D9BC;
+    --ink:#241A12;
+    --leaf:#5C7A4B;
+    --radius:2px;
+    --max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important;}
+  }
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Work Sans',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+  }
+  h1,h2,h3,.display{
+    font-family:'Yeseva One',serif;
+    font-weight:400;
+    line-height:1.15;
+    margin:0;
+  }
+  .mono{font-family:'Space Mono',monospace;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  :focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+
+  /* ---------- adire pattern textures ---------- */
+  .adire-dots{
+    background-image:
+      radial-gradient(circle at 12px 12px, rgba(241,230,212,0.55) 2.5px, transparent 3px),
+      radial-gradient(circle at 32px 32px, rgba(241,230,212,0.3) 2px, transparent 2.5px);
+    background-size:44px 44px;
+  }
+  .adire-ivory-dots{
+    background-image:
+      radial-gradient(circle at 10px 10px, rgba(27,42,78,0.08) 2px, transparent 2.5px);
+    background-size:28px 28px;
+  }
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--ivory);
+    border-bottom:2px solid var(--indigo-deep);
+  }
+  .navrow{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 0;
+  }
+  .brand{
+    display:flex; align-items:center; gap:12px;
+    text-decoration:none;
+    font-family:'Yeseva One',serif;
+    font-size:1.15rem;
+    color:var(--indigo-deep);
+    letter-spacing:.02em;
+  }
+  .seal{
+    width:44px; height:44px; flex:0 0 auto;
+  }
+  nav ul{
+    list-style:none; display:flex; gap:28px; margin:0; padding:0;
+  }
+  nav a{
+    text-decoration:none; font-size:.92rem; font-weight:600;
+    letter-spacing:.03em; text-transform:uppercase;
+    color:var(--ink); padding:6px 2px; border-bottom:2px solid transparent;
+  }
+  nav a:hover{border-bottom-color:var(--rust);}
+  .navToggle{display:none; background:none; border:2px solid var(--indigo-deep); border-radius:var(--radius); padding:8px 10px; cursor:pointer;}
+  .navToggle span, .navToggle span::before, .navToggle span::after{
+    display:block; width:20px; height:2px; background:var(--indigo-deep); position:relative; content:'';
+  }
+  .navToggle span::before{position:absolute; top:-6px;}
+  .navToggle span::after{position:absolute; top:6px;}
+
+  @media (max-width:760px){
+    nav{
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--ivory); border-bottom:2px solid var(--indigo-deep);
+      max-height:0; overflow:hidden; transition:max-height .25s ease;
+    }
+    nav.open{max-height:320px;}
+    nav ul{flex-direction:column; gap:0; padding:8px 24px 18px;}
+    nav a{display:block; padding:10px 0; border-bottom:1px solid var(--ivory-2);}
+    .navToggle{display:block;}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:var(--indigo-deep);
+    color:var(--ivory);
+    position:relative;
+    overflow:hidden;
+    padding:72px 0 88px;
+  }
+  .hero::before{
+    content:'';
+    position:absolute; inset:0;
+    background-image:
+      radial-gradient(circle at 20px 20px, rgba(241,230,212,0.45) 2.5px, transparent 3px);
+    background-size:48px 48px;
+    opacity:.35;
+    pointer-events:none;
+  }
+  .hero-grid{
+    position:relative; z-index:1;
+    display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center;
+  }
+  @media (max-width:860px){ .hero-grid{grid-template-columns:1fr;} }
+  .eyebrow{
+    font-family:'Space Mono',monospace; font-size:.8rem; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--gold); margin-bottom:18px; display:block;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 5.2vw, 3.6rem);
+    color:var(--ivory);
+  }
+  .hero h1 em{
+    font-style:normal; color:var(--gold);
+  }
+  .hero p.lede{
+    margin:22px 0 32px; font-size:1.1rem; max-width:46ch; color:var(--ivory-2);
+  }
+  .btn-row{display:flex; flex-wrap:wrap; gap:14px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 22px; border-radius:var(--radius);
+    text-decoration:none; font-weight:700; font-size:.95rem;
+    letter-spacing:.02em; border:2px solid transparent; cursor:pointer;
+  }
+  .btn-primary{background:var(--gold); color:var(--ink);}
+  .btn-primary:hover{background:#d59b33;}
+  .btn-outline{border-color:var(--ivory-2); color:var(--ivory);}
+  .btn-outline:hover{background:rgba(241,230,212,0.1);}
+
+  .hero-emblem{
+    display:flex; justify-content:center; align-items:center;
+  }
+  .hero-emblem svg{width:100%; max-width:320px; height:auto;}
+
+  .years-strip{
+    position:relative; z-index:1;
+    margin-top:56px; padding-top:28px; border-top:1px solid rgba(241,230,212,0.25);
+    display:flex; flex-wrap:wrap; gap:36px; align-items:center;
+  }
+  .years-strip .stat{font-family:'Yeseva One',serif; font-size:2rem; color:var(--gold);}
+  .years-strip .stat-label{font-family:'Space Mono',monospace; font-size:.78rem; color:var(--ivory-2); text-transform:uppercase; letter-spacing:.06em;}
+
+  /* ---------- section shell ---------- */
+  section{padding:80px 0;}
+  .section-head{
+    display:flex; align-items:flex-end; justify-content:space-between; gap:24px;
+    margin-bottom:44px; flex-wrap:wrap;
+    border-bottom:2px solid var(--indigo-deep); padding-bottom:20px;
+  }
+  .section-head .tag{
+    font-family:'Space Mono',monospace; font-size:.78rem; text-transform:uppercase;
+    letter-spacing:.1em; color:var(--rust); display:block; margin-bottom:8px;
+  }
+  .section-head h2{font-size:clamp(1.8rem,3.4vw,2.5rem); color:var(--indigo-deep);}
+
+  /* ---------- about ---------- */
+  .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;}
+  @media (max-width:800px){.about-grid{grid-template-columns:1fr;}}
+  .about-grid p{max-width:56ch;}
+  .credential-list{list-style:none; margin:28px 0 0; padding:0; display:grid; gap:16px;}
+  .credential-list li{
+    display:flex; gap:14px; align-items:flex-start;
+    background:var(--ivory-2); padding:16px 18px; border-radius:var(--radius);
+    border-left:4px solid var(--rust);
+  }
+  .credential-list .num{font-family:'Space Mono',monospace; color:var(--rust); font-weight:700;}
+
+  /* ---------- categories ---------- */
+  .cat-block{margin-bottom:64px;}
+  .cat-header{
+    display:flex; align-items:center; gap:18px; margin-bottom:28px;
+  }
+  .cat-icon{
+    width:56px; height:56px; flex:0 0 auto;
+    background:var(--indigo-deep); border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .cat-icon svg{width:30px; height:30px;}
+  .cat-header h3{font-size:1.5rem; color:var(--indigo-deep);}
+  .cat-header .yoruba{
+    font-family:'Space Mono',monospace; font-size:.85rem; color:var(--rust); display:block; margin-top:2px;
+  }
+  .item-grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:20px;
+  }
+  .item-card{
+    background:#fff; border:1px solid var(--ivory-2); border-radius:var(--radius);
+    padding:22px 20px; position:relative;
+  }
+  .item-card::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:4px;
+    background:var(--leaf);
+  }
+  .bark-card::before{background:var(--rust);}
+  .remedy-card::before{background:var(--gold);}
+  .item-card .iname{font-family:'Yeseva One',serif; font-size:1.15rem; color:var(--ink); margin-bottom:4px;}
+  .item-card .ilatin{font-family:'Space Mono',monospace; font-size:.78rem; color:var(--indigo-mid); display:block; margin-bottom:10px;}
+  .item-card p{font-size:.92rem; margin:0; color:#4a3a2c;}
+  .photo-note{
+    margin-top:10px; font-family:'Space Mono',monospace; font-size:.72rem;
+    color:#9a8a75; border-top:1px dashed var(--ivory-2); padding-top:8px;
+  }
+
+  /* ---------- services ---------- */
+  .services-wrap{background:var(--indigo-deep); color:var(--ivory);}
+  .services-wrap .section-head{border-bottom-color:rgba(241,230,212,.3);}
+  .services-wrap .section-head h2{color:var(--ivory);}
+  .services-wrap .tag{color:var(--gold);}
+  .service-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  @media (max-width:860px){.service-grid{grid-template-columns:1fr;}}
+  .service-card{
+    background:rgba(241,230,212,0.06); border:1px solid rgba(241,230,212,0.25);
+    border-radius:var(--radius); padding:28px 24px;
+  }
+  .service-card h3{font-size:1.25rem; color:var(--gold); margin-bottom:12px;}
+  .service-card p{color:var(--ivory-2); font-size:.95rem;}
+
+  /* ---------- contact ---------- */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
+  @media (max-width:800px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-methods{display:grid; gap:16px; margin-top:24px;}
+  .contact-method{
+    display:flex; gap:14px; align-items:flex-start;
+    text-decoration:none; color:var(--ink);
+    background:var(--ivory-2); padding:18px; border-radius:var(--radius);
+  }
+  .contact-method:hover{background:#e2d0ae;}
+  .contact-method .label{font-family:'Space Mono',monospace; font-size:.75rem; text-transform:uppercase; letter-spacing:.06em; color:var(--rust); display:block;}
+  .contact-method .value{font-weight:600;}
+
+  form{display:grid; gap:16px;}
+  label{font-family:'Space Mono',monospace; font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; display:block;}
+  input,textarea,select{
+    width:100%; padding:12px 14px; border:2px solid var(--indigo-deep);
+    border-radius:var(--radius); font-family:'Work Sans',sans-serif; font-size:1rem;
+    background:#fff; color:var(--ink);
+  }
+  textarea{min-height:120px; resize:vertical;}
+  .form-status{font-size:.9rem; min-height:1.2em;}
+  .form-status.ok{color:var(--leaf); font-weight:600;}
+  .form-status.err{color:var(--rust); font-weight:600;}
+
+  /* ---------- disclaimer ---------- */
+  .disclaimer{
+    background:var(--ivory-2); border-left:4px solid var(--rust);
+    padding:20px 22px; border-radius:var(--radius); font-size:.88rem; color:#4a3a2c; margin-top:40px;
+  }
+  .disclaimer strong{color:var(--rust-dark);}
+
+  footer{
+    background:var(--indigo-deep); color:var(--ivory-2);
+    padding:36px 0; font-size:.85rem;
+  }
+  .footer-row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; align-items:center;}
+  footer a{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<a href="#main" style="position:absolute; left:-9999px;">Skip to content</a>
+
+<header>
+  <div class="wrap navrow">
+    <a href="#top" class="brand" id="top">
+      <svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="#1B2A4E" stroke="#C08A28" stroke-width="3"/>
+        <circle cx="50" cy="50" r="36" fill="none" stroke="#F1E6D2" stroke-width="1.5" stroke-dasharray="2 5"/>
+        <text x="50" y="58" text-anchor="middle" font-family="Yeseva One, serif" font-size="30" fill="#F1E6D2">WA</text>
+      </svg>
+      Wunmi Alagbo
+    </a>
+    <button class="navToggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <nav id="navLinks">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stock">Stock</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" style="padding-top:0;">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Bogije · Ibeju-Lekki · Lagos</span>
+          <h1>Leaves, bark &amp; blends <em>trusted for 30 years.</em></h1>
+          <p class="lede">Wunmi Alagbo prepares traditional Yoruba herbs, tree bark, and agbo blends fresh to order — rooted in heritage, ready for consultation on WhatsApp or a visit to the shop.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://wa.me/2348033751036?text=Hello%20Mama%20Wunmi%2C%20I%20found%20your%20shop%20online%20and%20I%27d%20like%20to%20ask%20about%20a%20remedy." target="_blank" rel="noopener">Consult on WhatsApp</a>
+            <a class="btn btn-outline" href="#stock">Browse the stock</a>
+          </div>
+        </div>
+        <div class="hero-emblem">
+          <svg viewBox="0 0 240 280" aria-hidden="true">
+            <!-- mortar -->
+            <path d="M60 190 Q60 240 120 250 Q180 240 180 190 Z" fill="#8C3B2E"/>
+            <ellipse cx="120" cy="190" rx="60" ry="14" fill="#6E2E23"/>
+            <ellipse cx="120" cy="186" rx="52" ry="10" fill="#F1E6D2" opacity="0.9"/>
+            <!-- pestle -->
+            <rect x="112" y="70" width="16" height="100" rx="8" fill="#C08A28" transform="rotate(18 120 120)"/>
+            <!-- bundled herbs left -->
+            <g transform="translate(38,60) rotate(-8)">
+              <path d="M0 60 Q10 10 30 0 Q35 30 20 65 Z" fill="#5C7A4B"/>
+              <path d="M8 62 Q18 20 38 8 Q40 38 26 66 Z" fill="#728f5f"/>
+              <rect x="2" y="55" width="26" height="10" rx="3" fill="#C08A28"/>
+            </g>
+            <!-- bundled herbs right -->
+            <g transform="translate(168,58) rotate(10)">
+              <path d="M0 60 Q10 10 30 0 Q35 30 20 65 Z" fill="#5C7A4B"/>
+              <path d="M8 62 Q18 20 38 8 Q40 38 26 66 Z" fill="#3f5432"/>
+              <rect x="2" y="55" width="26" height="10" rx="3" fill="#C08A28"/>
+            </g>
+            <!-- small bark pieces -->
+            <rect x="95" y="205" width="14" height="34" rx="3" fill="#6E2E23" transform="rotate(-10 100 220)"/>
+            <rect x="118" y="210" width="12" height="30" rx="3" fill="#8C3B2E" transform="rotate(6 124 224)"/>
+            <rect x="138" y="206" width="13" height="32" rx="3" fill="#6E2E23" transform="rotate(14 144 222)"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="years-strip">
+        <div><span class="stat">30+</span><br><span class="stat-label">Years in practice</span></div>
+        <div><span class="stat">3</span><br><span class="stat-label">Categories in stock</span></div>
+        <div><span class="stat">2</span><br><span class="stat-label">Ways to consult — WhatsApp &amp; form</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <span class="section-head tag" style="border:none; padding:0; margin:0;"></span>
+        <span class="tag">The shop</span>
+        <h2>Three decades of herbal knowledge, one address in Ibeju-Lekki.</h2>
+        <p>For over 30 years, Wunmi Alagbo has prepared fresh leaves, tree bark, and traditional agbo blends for the community around Bogije, Ibeju-Lekki. Every order is measured and mixed by hand, the way it's been done for generations — nothing pre-packaged, nothing guessed.</p>
+        <p>Whether you know exactly what you need or you're not sure where to start, a WhatsApp message is the fastest way to reach her directly for guidance before you buy.</p>
+      </div>
+      <ul class="credential-list">
+        <li><span class="num">01</span><span>Hand-selected leaves and bark, sourced and prepared fresh — not stockpiled for months.</span></li>
+        <li><span class="num">02</span><span>Blends mixed to order based on what you tell her you need.</span></li>
+        <li><span class="num">03</span><span>Reachable directly on WhatsApp for consultation, with home delivery and in-person visits available.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- STOCK / CATEGORIES -->
+  <section id="stock" class="adire-ivory-dots">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Browse by category</span>
+          <h2>What's in stock</h2>
+        </div>
+        <p style="max-width:38ch; margin:0; font-size:.92rem;">Stock changes with the season — message on WhatsApp to confirm an item is available before you visit.</p>
+      </div>
+
+      <!-- LEAVES -->
+      <div class="cat-block">
+        <div class="cat-header">
+          <div class="cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20C4 10 10 4 20 4C20 14 14 20 4 20Z" fill="#F1E6D2"/><path d="M4 20L20 4" stroke="#1B2A4E" stroke-width="1.2"/></svg>
+          </div>
+          <div>
+            <h3>Leaves <span class="yoruba">Ewé</span></h3>
+          </div>
+        </div>
+        <div class="item-grid">
+          <div class="item-card">
+            <div class="iname">Efinrin <span class="mono" style="font-size:.7rem;color:#9a8a75;">(Scent Leaf)</span></div>
+            <span class="ilatin">Ocimum gratissimum</span>
+            <p>A staple leaf in agbo preparations, reached for as part of everyday wellness teas.</p>
+            <img src="efinrin.jpeg" alt="Efinrin (Scent Leaf)" style="border-radius:2px; margin-bottom:10px; aspect-ratio:4/3; object-fit:cover;">
+            </div>
+          <div class="item-card">
+            <div class="iname">Dongoyaro <span class="mono" style="font-size:.7rem;color:#9a8a75;">(Neem)</span></div>
+            <span class="ilatin">Azadirachta indica</span>
+            <p>One of the most reached-for leaves in Yoruba herbal practice, brewed for fever support and skin cleansing.</p>
+            <img src="Dongoyaro.jpeg" alt="Dongoyaro (Neem)" style="border-radius:2px; margin-bottom:10px; aspect-ratio:4/3; object-fit:cover;">
+          </div>
+          <div class="item-card">
+            <div class="iname">Ewuro <span class="mono" style="font-size:.7rem;color:#9a8a75;">(Bitter Leaf)</span></div>
+            <span class="ilatin">Vernonia amygdalina</span>
+            <p>A bitter tonic leaf taken traditionally to support digestion and everyday cleansing.</p>
+          <img src="Ewuro.jpeg" alt="Ewuro (bitter Leaf)" style="border-radius:2px; margin-bottom:10px; aspect-ratio:4/3; object-fit:cover;">
+          </div>
+          <div class="item-card">
+            <div class="iname">Minti <span class="mono" style="font-size:.7rem;color:#9a8a75;">(Mint)</span></div>
+            <span class="ilatin">Mentha piperita</span>
+            <p>Used in calming teas and as a gentle digestive aid.</p>
+            <img src="Minti.jpeg" alt="Minti (Mint)" style="border-radius:2px; margin-bottom:10px; aspect-ratio:4/3; object-fit:cover;">
+          </div>
+          <div class="item-card">
+            <div class="iname">Eti Erin <span class="mono" style="font-size:.7rem;color:#9a8a75;">(Aloe Vera)</span></div>
+            <span class="ilatin">Aloe vera</span>
+            <p>The gel is drawn on for skin care and to soothe minor irritation.</p>
+            <img src="Eti-erin.jpeg" alt="Eti Erin (Aloe Vera)" style="border-radius:2px; margin-bottom:10px; aspect-ratio:4/3; object-fit:cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- BARK -->
+      <div class="cat-block">
+        <div class="cat-header">
+          <div class="cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="2" width="6" height="20" rx="2" fill="#F1E6D2"/><path d="M9 6h6M9 11h6M9 16h6" stroke="#1B2A4E" stroke-width="1"/></svg>
+          </div>
+          <div>
+            <h3>Bark <span class="yoruba">Èpo</span></h3>
+          </div>
+        </div>
+        <div class="item-grid">
+          <div class="item-card bark-card">
+            <div class="iname">Epo Ahun <span class="mono" style="font-size:.7rem;color:#9a8a75;">(Stool Wood)</span></div>
+            <span class="ilatin">Alstonia boonei</span>
+            <p>A cornerstone bark in Yoruba herbal practice, decocted as a general tonic.</p>
+            <img src="Epo-ahun.jpeg" alt="epo ahun(Stool wood)" style="border-radius:2px; margin-bottom:10px; aspect-ratio:4/3; object-fit:cover;">
+          </div>
+          <div class="item-card bark-card">
+            <div class="iname">Epo Dongoyaro <span class="mono" style="font-size:.7rem;color:#9a8a75;">(Neem bark)</span></div>
+            <span class="ilatin">Azadirachta indica</span>
+            <p>Boiled alongside the leaf for a stronger, more bitter preparation.</p>
+            <img src="Epo-Dongoyaro.jpg" alt="Epo Dongoyaro(neem bark)" style="border-radius:2px; margin-bottom:10px; aspect-ratio:4/3; object-fit:cover;">
+          </div>
+          <div class="item-card bark-card">
+            <div class="iname">Epo Oganwo <span class="mono" style="font-size:.7rem;color:#9a8a75;">(African Mahogany)</span></div>
+            <span class="ilatin">Khaya senegalensis</span>
+            <p>A bitter tonic bark used in blends for everyday wellness.</p>
+            <img src="Epo-Oganwo.jpeg" alt="Epo oganwo (Scent Leaf)" style="border-radius:2px; margin-bottom:10px; aspect-ratio:4/3; object-fit:cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- REMEDIES / MIXTURES -->
+      <div class="cat-block" style="margin-bottom:0;">
+        <div class="cat-header">
+          <div class="cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3h8v5l4 10a2 2 0 01-2 3H6a2 2 0 01-2-3l4-10V3z" fill="#F1E6D2"/><path d="M8 3h8" stroke="#1B2A4E" stroke-width="1.2"/></svg>
+          </div>
+          <div>
+            <h3>Remedies &amp; Mixtures <span class="yoruba">Agbo</span></h3>
+          </div>
+        </div>
+        <div class="item-grid">
+          <div class="item-card remedy-card">
+            <div class="iname">Agbo Jedi-Jedi</div>
+            <span class="ilatin">Blended leaves, bark &amp; roots</span>
+            <p>A time-honoured blend traditionally used for everyday digestive comfort.</p>
+    
+          </div>
+          <div class="item-card remedy-card">
+            <div class="iname">Agbo Iba</div>
+            <span class="ilatin">Blended leaves &amp; bark</span>
+            <p>A fever-support blend passed down through generations of herbal practice.</p>
+            
+          </div>
+          <div class="item-card remedy-card">
+            <div class="iname">Agbo Ile Tutu</div>
+            <span class="ilatin">Cooling blend</span>
+            <p>Traditionally prepared to cool internal heat, especially for children.</p>
+            
+          </div>
+          <div class="item-card remedy-card">
+            <div class="iname">Custom Blend</div>
+            <span class="ilatin">Made to order</span>
+            <p>Tell Mama Wunmi what you're looking for on WhatsApp and she'll prepare a mix suited to you.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="disclaimer">
+        <strong>A note on these preparations:</strong> These are traditional herbal products rooted in Yoruba heritage, described here for general and cultural information. They are not a substitute for medical diagnosis or treatment. If you have a serious, persistent, or urgent health concern — or are pregnant, nursing, or on other medication — please also consult a qualified health professional.
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services-wrap">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">How to reach her</span>
+          <h2>Services</h2>
+        </div>
+      </div>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>WhatsApp &amp; Form Consultation</h3>
+          <p>Describe what you need and get guidance directly from Mama Wunmi before you order — no appointment required.</p>
+        </div>
+        <div class="service-card">
+          <h3>Home Delivery</h3>
+          <p>Orders can be delivered within the Ibeju-Lekki area and beyond — confirm delivery details on WhatsApp.</p>
+        </div>
+        <div class="service-card">
+          <h3>In-Person Visits</h3>
+          <p>Prefer to see the stock yourself? Visit the shop at 25 Baba Mustapha Street, Bogije, Ibeju-Lekki, Lagos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="tag">Get in touch</span>
+        <h2>Start a consultation</h2>
+        <p>Send a message on WhatsApp for the fastest reply, or use the form and Mama Wunmi will get back to you.</p>
+        <div class="contact-methods">
+          <a class="contact-method" href="https://wa.me/2348033751036?text=Hello%20Mama%20Wunmi%2C%20I%27d%20like%20to%20ask%20about%20a%20remedy." target="_blank" rel="noopener">
+            <span>💬</span>
+            <span><span class="label">WhatsApp</span><span class="value">0803 375 1036</span></span>
+          </a>
+          <a class="contact-method" href="mailto:wunmialagbo326@gmail.com">
+            <span>✉️</span>
+            <span><span class="label">Email</span><span class="value">wunmialagbo326@gmail.com</span></span>
+          </a>
+          <a class="contact-method" href="https://www.google.com/maps/search/?api=1&query=25+Baba+Mustapha+Street%2C+Bogije%2C+Ibeju-Lekki%2C+Lagos" target="_blank" rel="noopener">
+            <span>📍</span>
+            <span><span class="label">Shop address</span><span class="value">25 Baba Mustapha Street, Bogije, Ibeju-Lekki, Lagos</span></span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <form id="contactForm">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email or phone</label>
+            <input type="text" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">What do you need?</label>
+            <textarea id="message" name="message" required placeholder="Tell Mama Wunmi what you're looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-self:start;">Send message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>Bogije, Ibeju-Lekki, Lagos © Wunmi Alagbo</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  /*
+    CONTACT FORM — no Formspree endpoint set yet, so this currently uses a mailto: fallback.
+    To make it send silently (no email client popup): sign up free at https://formspree.io,
+    create a form pointed at doyin854@gmail.com, and paste the endpoint below, e.g.
+    "https://formspree.io/f/xxxxxxx"
+  */
+  const FORM_ENDPOINT = "https://formspree.io/f/xjybbnok"; // <-- paste Formspree endpoint here once created
+
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (FORM_ENDPOINT) {
+      status.textContent = "Sending...";
+      status.className = "form-status";
+      fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: new FormData(form)
+      }).then(res => {
+        if (res.ok) {
+          status.textContent = "Message sent — thanks, we'll reply soon.";
+          status.className = "form-status ok";
+          form.reset();
+        } else {
+          status.textContent = "Something went wrong. Try WhatsApp instead.";
+          status.className = "form-status err";
+        }
+      }).catch(() => {
+        status.textContent = "Network error. Try WhatsApp instead.";
+        status.className = "form-status err";
+      });
+    } else {
+      const subject = encodeURIComponent("Consultation request from " + name);
+      const body = encodeURIComponent(message + "\n\n— " + name + " (" + email + ")");
+      window.location.href = "mailto:doyin854@gmail.com?subject=" + subject + "&body=" + body;
+      status.textContent = "Opening your email app to send this...";
+      status.className = "form-status ok";
+    }
+  });
+</script>
+
+</body>
+</html>
